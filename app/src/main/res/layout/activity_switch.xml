@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        style="@style/top_nav">
+
+        <ImageView
+            android:id="@+id/iv_return_switch"
+            android:layout_width="38dp"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+
+            android:src="@drawable/fanhui" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="开关"
+            android:textSize="16sp"/>
+        <TextView
+            android:id="@+id/tv_connect_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="连接"
+            android:textColor="#404040"
+            android:padding="8dp"
+            android:textSize="14sp"/>
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Switch
+            android:id="@+id/switch1"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:text="@string/switch1_name"
+            android:textColor="@color/color1"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="温度"
+            android:layout_gravity="center"
+            android:textSize="24sp"
+            android:textColor="@android:color/holo_blue_dark"
+            android:layout_marginLeft="20dp">
+
+        </TextView>
+
+
+        <SeekBar
+            android:id="@+id/seekbar_1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:max="30"
+            android:min="16"
+            android:progress="26"
+            >
+
+        </SeekBar>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Switch
+            android:id="@+id/switch2"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:text="@string/switch2_name"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="24sp"
+            android:textColor="@color/color1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/switch1" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="亮度"
+            android:layout_gravity="center"
+            android:textSize="24sp"
+            android:textColor="@android:color/holo_blue_dark"
+            android:layout_marginLeft="20dp">
+
+        </TextView>
+
+
+        <SeekBar
+            android:id="@+id/seekbar_2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:max="4"
+            android:min="0"
+            android:progress="2"
+            >
+
+        </SeekBar>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Switch
+            android:id="@+id/switch3"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:text="@string/switch3_name"
+            android:textSize="24sp"
+            android:textColor="@color/color1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/switch2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="风力"
+            android:layout_gravity="center"
+            android:textSize="24sp"
+            android:textColor="@android:color/holo_blue_dark"
+            android:layout_marginLeft="20dp">
+
+        </TextView>
+
+
+        <SeekBar
+            android:id="@+id/seekbar_3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:max="4"
+            android:min="0"
+            android:progress="3"
+            >
+
+        </SeekBar>
+
+
+    </LinearLayout>
+</LinearLayout>

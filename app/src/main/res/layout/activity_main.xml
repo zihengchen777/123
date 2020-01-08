@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/app_title"
+            android:gravity="center"
+            android:textSize="100px"
+            android:background="@android:color/holo_purple"
+            android:textColor="@android:color/white">
+
+        </TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/connect"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:text="连   接"
+            android:background="@android:color/holo_green_dark"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="80px"
+            android:gravity="center">
+
+
+        </TextView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp">
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/switch_1"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:background="@android:color/holo_purple"
+            android:text="开   关"
+            android:textColor="@android:color/white"
+            android:textSize="80px"
+            android:gravity="center">
+
+
+        </TextView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp">
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/about"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:background="@android:color/holo_blue_bright"
+            android:textColor="@android:color/holo_green_dark"
+            android:text="关   于"
+            android:textSize="80px"
+            android:gravity="center">
+
+
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp">
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/mine"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:background="@android:color/holo_red_light"
+            android:text="我   的"
+            android:textColor="@android:color/white"
+            android:textSize="80px"
+            android:gravity="center">
+
+
+        </TextView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+            </ImageView>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">智能家居</string>
+    <string name="app_title">小熊之家</string>
+    <string name="switch3_name">风扇</string>
+    <string name="switch1_name">空调</string>
+    <string name="switch2_name">台灯</string>
+
+    <string name="version_name">小熊之家 V1.0</string>
+</resources>
