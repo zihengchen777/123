@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         connect.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(MainActivity.this,ConnectActivity.class);
+                Intent intent=new Intent(MainActivity.this,WifiActivity.class);
                 startActivity(intent);
             }
         });
@@ -45,7 +45,8 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        switch_1.setOnClickListener(new View.OnClickListener() {
+        switch_1.setOnClickListener(
+                new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent=new Intent(MainActivity.this,SwitchActivity.class);

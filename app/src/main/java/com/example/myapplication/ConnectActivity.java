@@ -168,7 +168,7 @@ public class ConnectActivity extends Activity implements OnItemClickListener {
             // 判断是否拿到输出流
             if (os != null) {
                 // 需要发送的信息
-                String text = "成功发送信息";
+                String text = "Ox88888";
                 // 以utf-8的格式发送出去
                 os.write(text.getBytes("UTF-8"));
             }

@@ -32,7 +32,7 @@ public class LauncherActivity extends AppCompatActivity {
                 case HANDLER_SPLASH:
 
                     if (isFirst()) {
-                        startActivity(new Intent(LauncherActivity.this, EnterActivity.class));
+                        startActivity(new Intent(LauncherActivity.this, GuideActivity.class));
                     } else {
                         startActivity(new Intent(LauncherActivity.this, EnterActivity.class));
                     }

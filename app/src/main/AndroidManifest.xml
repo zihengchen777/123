@@ -5,6 +5,8 @@
     <uses-permission android:name="android.permission.BLUETOOTH" />
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/huojian"
@@ -12,6 +14,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".WifiActivity"></activity>
         <activity
             android:name=".LauncherActivity"
             android:screenOrientation="portrait"
@@ -19,24 +22,21 @@
             android:windowSoftInputMode="adjustPan|stateHidden">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".GuideActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/NoActivityFullscreen" >
-
-        </activity>
+            android:theme="@style/NoActivityFullscreen"></activity>
         <activity android:name=".SwitchActivity" />
         <activity android:name=".MineActivity" />
         <activity android:name=".AboutActivity" />
         <activity android:name=".ConnectActivity" />
-        <activity android:name=".EnterActivity"
-            android:screenOrientation="portrait">
-
-        </activity>
+        <activity
+            android:name=".EnterActivity"
+            android:screenOrientation="portrait"></activity>
         <activity android:name=".RegisterActivity" />
         <activity android:name=".MainActivity" />
     </application>
